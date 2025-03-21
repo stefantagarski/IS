@@ -1,0 +1,18 @@
+﻿using EShop.Domain.DomainModels;
+using EShop.Domain.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace EShop.web.Data
+{
+    public class ApplicationDbContext : IdentityDbContext<EShopApplicationUser>
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<ProductInShoppingCart> ProductInShoppingCarts { get; set; }
+    }
+}
