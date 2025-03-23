@@ -10,3 +10,4 @@ C:\FINKI\IS\IS_aud\EShop.Domain\obj\Debug\net8.0\EShop.Domain.dll
 C:\FINKI\IS\IS_aud\EShop.Domain\obj\Debug\net8.0\refint\EShop.Domain.dll
 C:\FINKI\IS\IS_aud\EShop.Domain\obj\Debug\net8.0\EShop.Domain.pdb
 C:\FINKI\IS\IS_aud\EShop.Domain\obj\Debug\net8.0\ref\EShop.Domain.dll
+C:\FINKI\IS\IS_aud\EShop.Domain\obj\Debug\net8.0\EShop.Domain.sourcelink.json
