@@ -3,7 +3,7 @@ using EShop.Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace EShop.web.Data
+namespace EShop.Repository
 {
     public class ApplicationDbContext : IdentityDbContext<EShopApplicationUser>
     {

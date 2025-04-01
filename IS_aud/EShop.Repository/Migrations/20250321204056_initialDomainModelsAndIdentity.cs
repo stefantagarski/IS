@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace EShop.web.Data.Migrations
+namespace EShop.Repository
 {
     /// <inheritdoc />
     public partial class initialDomainModelsAndIdentity : Migration
