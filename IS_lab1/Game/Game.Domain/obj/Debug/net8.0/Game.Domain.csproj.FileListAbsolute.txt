@@ -1,0 +1,13 @@
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\bin\Debug\net8.0\Game.Domain.deps.json
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\bin\Debug\net8.0\Game.Domain.dll
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\bin\Debug\net8.0\Game.Domain.pdb
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.csproj.AssemblyReference.cache
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.AssemblyInfoInputs.cache
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.AssemblyInfo.cs
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.csproj.CoreCompileInputs.cache
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.sourcelink.json
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.dll
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\refint\Game.Domain.dll
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\Game.Domain.pdb
+C:\FINKI\IS\IS_lab1\Game\Game.Domain\obj\Debug\net8.0\ref\Game.Domain.dll
