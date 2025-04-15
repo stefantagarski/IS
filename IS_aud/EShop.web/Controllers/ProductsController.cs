@@ -8,13 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using EShop.Domain.DomainModels;
 using EShop.Repository;
 using EShop.Service.Interface;
+using System.Security.Claims;
 
 namespace EShop.web.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
-
+       
         public ProductsController(IProductService productService)
         {
             _productService = productService;
@@ -145,5 +146,14 @@ namespace EShop.web.Controllers
         {
             return _productService.GetById(id) == null ? false : true;
         }
+
+        public IActionResult AddToCart(Guid id)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            _productService.AddToCart(id, Guid.Parse(userId));
+            return RedirectToAction("Index", "Products");
+        }
+
+        
     }
 }
