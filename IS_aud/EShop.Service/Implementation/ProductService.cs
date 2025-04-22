@@ -1,4 +1,5 @@
 ﻿using EShop.Domain.DomainModels;
+using EShop.Domain.DTO;
 using EShop.Repository;
 using EShop.Service.Interface;
 using System;
@@ -29,19 +30,19 @@ namespace EShop.Service.Implementation
             return _productRepository.Insert(product);
         }
 
-        public void AddToCart(Guid productId, Guid userId)
+        public void AddToCart(AddToCartDTO addToCartDTO, Guid userId)
         {
             var shoppingCart = _cartService.GetByUserId(userId);
 
-            var product = _productRepository.Get(selector: x => x, predicate: x => x.Id == productId);
+            var product = _productRepository.Get(selector: x => x, predicate: x => x.Id == addToCartDTO.ProductId);
 
             var existingProductInShoppingCart = _productsInShoppingCartsRepository
                 .Get(selector: x => x,
-               predicate: x => x.ProductId == productId && x.ShoppingCartId == shoppingCart.Id);
+                predicate: x => x.ProductId == addToCartDTO.ProductId && x.ShoppingCartId == shoppingCart.Id);
 
             if(existingProductInShoppingCart != null)
             {
-                existingProductInShoppingCart.Quantity++;
+                existingProductInShoppingCart.Quantity += addToCartDTO.Quantity;
                 _productsInShoppingCartsRepository.Update(existingProductInShoppingCart);
             }
             else
@@ -49,11 +50,11 @@ namespace EShop.Service.Implementation
                 ProductInShoppingCart newProduct = new ProductInShoppingCart
                 {
                     Id = Guid.NewGuid(),
-                    ProductId = productId,
+                    ProductId = addToCartDTO.ProductId,
                     Product = product,
                     ShoppingCartId = shoppingCart.Id,
                     ShoppingCart = shoppingCart,
-                    Quantity = 1
+                    Quantity = addToCartDTO.Quantity
                 };
                 _productsInShoppingCartsRepository.Insert(newProduct);
             }

@@ -9,16 +9,19 @@ using EShop.Domain.DomainModels;
 using EShop.Repository;
 using EShop.Service.Interface;
 using System.Security.Claims;
+using EShop.Domain.DTO;
 
 namespace EShop.web.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
-       
-        public ProductsController(IProductService productService)
+        private readonly IShoppingCartService _cartService;
+
+        public ProductsController(IProductService productService, IShoppingCartService cartService)
         {
             _productService = productService;
+            _cartService = cartService;
         }
 
         // GET: Products
@@ -149,11 +152,18 @@ namespace EShop.web.Controllers
 
         public IActionResult AddToCart(Guid id)
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            _productService.AddToCart(id, Guid.Parse(userId));
-            return RedirectToAction("Index", "Products");
+            var dto = _cartService.GetProductInfo(id);
+            return View(dto);
         }
 
-        
+        [HttpPost]
+        public IActionResult AddToCart(AddToCartDTO model)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            _productService.AddToCart(model, Guid.Parse(userId));
+
+            return RedirectToAction("Index", "Products");
+        }
     }
 }

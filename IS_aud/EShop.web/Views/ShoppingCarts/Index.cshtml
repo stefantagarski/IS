@@ -10,7 +10,7 @@
 
 
 <div class="container">
-
+    <a class="btn btn-outline-success" asp-action="Order">Order</a>
     <div class="row" style="margin-top:20px;">
         <table class="table">
             <thead>
@@ -31,6 +31,10 @@
                         <td>@currentProduct.Product.Name</td>
                         <td>@currentProduct.Quantity</td>
                         <td>@currentProduct.Product.Price</td>
+                        <td>
+                            <a class="btn btn-danger" asp-controller="ShoppingCarts" 
+                            asp-action="DeleteFromCart" asp-route-id="@currentProduct.ProductId">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>

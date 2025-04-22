@@ -22,6 +22,22 @@ namespace EShop.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EShop.Domain.DomainModels.Order", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("EShop.Domain.DomainModels.Product", b =>
                 {
                     b.Property<Guid>("Id")
@@ -78,6 +94,30 @@ namespace EShop.Repository.Migrations
                     b.HasIndex("ShoppingCartId");
 
                     b.ToTable("ProductInShoppingCarts");
+                });
+
+            modelBuilder.Entity("EShop.Domain.DomainModels.ProductsInOrder", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductsInOrders");
                 });
 
             modelBuilder.Entity("EShop.Domain.DomainModels.ShoppingCart", b =>
@@ -305,6 +345,15 @@ namespace EShop.Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("EShop.Domain.DomainModels.Order", b =>
+                {
+                    b.HasOne("EShop.Domain.Identity.EShopApplicationUser", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId");
+
+                    b.Navigation("Owner");
+                });
+
             modelBuilder.Entity("EShop.Domain.DomainModels.Product", b =>
                 {
                     b.HasOne("EShop.Domain.Identity.EShopApplicationUser", null)
@@ -329,6 +378,25 @@ namespace EShop.Repository.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("ShoppingCart");
+                });
+
+            modelBuilder.Entity("EShop.Domain.DomainModels.ProductsInOrder", b =>
+                {
+                    b.HasOne("EShop.Domain.DomainModels.Order", "Order")
+                        .WithMany("ProductsInOrders")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EShop.Domain.DomainModels.Product", "Product")
+                        .WithMany("ProductsInOrders")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("EShop.Domain.DomainModels.ShoppingCart", b =>
@@ -391,9 +459,16 @@ namespace EShop.Repository.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("EShop.Domain.DomainModels.Order", b =>
+                {
+                    b.Navigation("ProductsInOrders");
+                });
+
             modelBuilder.Entity("EShop.Domain.DomainModels.Product", b =>
                 {
                     b.Navigation("ProductInShoppingCarts");
+
+                    b.Navigation("ProductsInOrders");
                 });
 
             modelBuilder.Entity("EShop.Domain.DomainModels.ShoppingCart", b =>

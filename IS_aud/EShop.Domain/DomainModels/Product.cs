@@ -21,5 +21,6 @@ namespace EShop.Domain.DomainModels
         public double Rating { get; set; }
 
         public virtual ICollection<ProductInShoppingCart>? ProductInShoppingCarts { get; set; }
+        public virtual ICollection<ProductsInOrder>? ProductsInOrders { get; set; }
     }
 }

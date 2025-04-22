@@ -14,5 +14,7 @@ namespace EShop.Repository
         public DbSet<Product> Products { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<ProductInShoppingCart> ProductInShoppingCarts { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<ProductsInOrder> ProductsInOrders { get; set; }
     }
 }
