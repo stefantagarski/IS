@@ -31,7 +31,7 @@ namespace EShop.Service.Implementation
 
         public bool DeleteFromCart(Guid id, string userId)
         {
-            var shoppingCart = _cartRepository.Get(selector: x => x, predicate: x => x.OwnerId == id.ToString());
+            var shoppingCart = _cartRepository.Get(selector: x => x, predicate: x => x.OwnerId == userId);
 
             var productToDelete = _productsInCartsRepository.Get(selector: x => x,
                 predicate: x => x.ProductId == id && x.ShoppingCartId == shoppingCart.Id);
@@ -43,14 +43,14 @@ namespace EShop.Service.Implementation
 
         public ShoppingCart GetByUserId(Guid id)
         {
-            return _cartRepository.Get(selector: x => x, predicate: x => x.OwnerId == id.ToString()); 
+            return _cartRepository.Get(selector: x => x, predicate: x => x.OwnerId == id.ToString());
         }
 
         public ShoppingCartDTO GetByUserIdIncudingProducts(Guid id)
         {
             var shoppingCart = _cartRepository.Get(selector: x => x,
-            predicate: x => x.OwnerId == id.ToString(),
-            include: x => x.Include(y => y.ProductInShoppingCarts).ThenInclude(z => z.Product));
+                predicate: x => x.OwnerId == id.ToString(),
+                include: x => x.Include(y => y.ProductInShoppingCarts).ThenInclude(z => z.Product));
 
             var allProducts = shoppingCart.ProductInShoppingCarts.ToList();
 
@@ -91,8 +91,8 @@ namespace EShop.Service.Implementation
         public bool OrderProducts(string userId)
         {
             var shoppingCart = _cartRepository.Get(selector: x => x,
-            predicate: x => x.OwnerId == userId,
-            include: x => x.Include(y => y.ProductInShoppingCarts).ThenInclude(z => z.Product));
+               predicate: x => x.OwnerId == userId,
+               include: x => x.Include(y => y.ProductInShoppingCarts).ThenInclude(z => z.Product));
 
             var newOrder = new Order
             {
@@ -116,7 +116,7 @@ namespace EShop.Service.Implementation
 
             foreach (var product in productsInOrder)
             {
-                total = product.Product.Price * product.Quantity;
+                total += product.Product.Price * product.Quantity;
                 _productsInOrderRepository.Insert(product);
             }
 
