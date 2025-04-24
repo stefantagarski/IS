@@ -1,0 +1,9 @@
+Below is the starter code with the solution from the first laboratory exercise.
+
+Your task will be to appropriately transform the existing MVC implementation into an Onion architecture. The Repository layer, including the IRepository interface and its generic implementation Repository, is included in the starter code. Additionally, interfaces with basic CRUD operations for all models are provided. You are required to create implementations for all service layer interfaces and adapt the controllers so that the dependency on ApplicationDbContext is removed and the service methods are used instead. For Dependency Injection to work properly, the services must be correctly registered in Program.cs.
+
+You should implement a View and the corresponding service methods for adding an Participation. On the Athletes index page, an additional action Add Participation should be added, leading to a form where the Competition is selected from a drop-down list. DateRegistered should be automatically populated with the current timestamp at the moment the record is created.
+
+Bonus task:
+
+In the Participation model, add a reference to AthletesApplicationUser, and upon record creation, the currently logged-in user should be saved.
