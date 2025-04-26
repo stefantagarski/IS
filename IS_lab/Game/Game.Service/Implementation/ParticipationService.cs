@@ -29,28 +29,18 @@ namespace Game.Service.Implementation
 
             var competition = _competitionRepository.Get(selector: x => x, predicate: x => x.Id == competitionId);
 
-            var exsistingParticipation = _participationRepository.Get(selector: x => x,
-                predicate: x => x.AthleteId == athlete.Id && x.CompetitionId == competition.Id && x.userId == userId);
-
-            if (exsistingParticipation != null)
-            {
-              return _participationRepository.Update(exsistingParticipation);
-            }
-            else
-            {
-                var participation = new Participation
+                var newParticipation = new Participation
                 {
                     Id = Guid.NewGuid(),
                     AthleteId = athlete.Id,
                     Athlete = athlete,
-                    Competition = competition,
                     CompetitionId = competition.Id,
+                    Competition = competition,
                     DateRegistered = DateTime.Now,
                     userId = userId
                 };
 
-                return _participationRepository.Insert(participation);
-            }
+            return _participationRepository.Insert(newParticipation);
         }
     }
 }
