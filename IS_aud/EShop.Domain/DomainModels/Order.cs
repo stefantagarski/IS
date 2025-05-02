@@ -12,5 +12,7 @@ namespace EShop.Domain.DomainModels
         public string? OwnerId { get; set; }
         public EShopApplicationUser? Owner { get; set; }
         public virtual ICollection<ProductsInOrder>? ProductsInOrders { get; set; }
+
+        public double Total { get; set; }   
     }
 }

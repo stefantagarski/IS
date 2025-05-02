@@ -98,7 +98,8 @@ namespace EShop.Service.Implementation
             {
                 Id = Guid.NewGuid(),
                 Owner = shoppingCart.Owner,
-                OwnerId = userId
+                OwnerId = userId,
+                Total = 0.0
             };
 
             _orderRepository.Insert(newOrder);
@@ -119,6 +120,9 @@ namespace EShop.Service.Implementation
                 total += product.Product.Price * product.Quantity;
                 _productsInOrderRepository.Insert(product);
             }
+
+            newOrder.Total = total;
+            _orderRepository.Update(newOrder);
 
             shoppingCart.ProductInShoppingCarts.Clear();
             _cartRepository.Update(shoppingCart);
