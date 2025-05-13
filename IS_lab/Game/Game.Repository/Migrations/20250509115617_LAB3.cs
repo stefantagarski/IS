@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Game.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class LAB3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -186,6 +186,25 @@ namespace Game.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Tournament",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    OwnerId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Tournament", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Tournament_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Athletes",
                 columns: table => new
                 {
@@ -209,17 +228,49 @@ namespace Game.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AthleteInTournament",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    AthleteId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TournamentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AthleteInTournament", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AthleteInTournament_Athletes_AthleteId",
+                        column: x => x.AthleteId,
+                        principalTable: "Athletes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AthleteInTournament_Tournament_TournamentId",
+                        column: x => x.TournamentId,
+                        principalTable: "Tournament",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Participations",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CompetitionId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     AthleteId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DateRegistered = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DateRegistered = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    OwnerId = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Participations", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Participations_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Participations_Athletes_AthleteId",
                         column: x => x.AthleteId,
@@ -274,6 +325,16 @@ namespace Game.Repository.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AthleteInTournament_AthleteId",
+                table: "AthleteInTournament",
+                column: "AthleteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AthleteInTournament_TournamentId",
+                table: "AthleteInTournament",
+                column: "TournamentId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Athletes_TeamId",
                 table: "Athletes",
                 column: "TeamId");
@@ -287,6 +348,16 @@ namespace Game.Repository.Migrations
                 name: "IX_Participations_CompetitionId",
                 table: "Participations",
                 column: "CompetitionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Participations_UserId",
+                table: "Participations",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tournament_UserId",
+                table: "Tournament",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -308,19 +379,25 @@ namespace Game.Repository.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "AthleteInTournament");
+
+            migrationBuilder.DropTable(
                 name: "Participations");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
+                name: "Tournament");
 
             migrationBuilder.DropTable(
                 name: "Athletes");
 
             migrationBuilder.DropTable(
                 name: "Competitions");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
                 name: "Teams");

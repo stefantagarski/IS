@@ -1,6 +1,7 @@
 ﻿using Game.Domain.DomainModels;
 using Game.Repository;
 using Game.Service.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,23 +25,49 @@ namespace Game.Service.Implementation
         }
 
         public Participation AddParticipationForAthleteAndCompetition(Guid athleteId, Guid competitionId, string userId)
-        {
-            var athlete = _athleteRepository.Get(selector: x => x, predicate: x => x.Id == athleteId);
-
-            var competition = _competitionRepository.Get(selector: x => x, predicate: x => x.Id == competitionId);
-
+        {           
                 var newParticipation = new Participation
                 {
-                    Id = Guid.NewGuid(),
-                    AthleteId = athlete.Id,
-                    Athlete = athlete,
-                    CompetitionId = competition.Id,
-                    Competition = competition,
+                    AthleteId = athleteId,
+                    CompetitionId = competitionId,
                     DateRegistered = DateTime.Now,
-                    userId = userId
+                    OwnerId = userId
                 };
 
             return _participationRepository.Insert(newParticipation);
+        }
+       
+        //TODO
+        public List<Participation> GetAllByCurrentUser(string userId)
+        {
+            return _participationRepository.GetAll(selector: x => x,
+                predicate: x => x.OwnerId == userId,
+                include: x => x.Include(y => y.Athlete).ThenInclude(z => z.Participations).
+                Include(x => x.Competition).Include(x => x.Owner)).ToList();
+
+        }
+
+        //TODO
+        public Participation GetById(Guid id)
+        {
+            return _participationRepository.Get(selector: x => x,
+                predicate: x => x.OwnerId == id.ToString(),
+                include: x => x.Include(y => y.Athlete).ThenInclude(z => z.Participations).
+                Include(x => x.Competition).Include(x => x.Owner));
+        }
+
+        //TODO
+        public Participation DeleteById(Guid id)
+        {
+            var partc = _participationRepository.Get(selector: x => x, predicate: x => x.Id == id);
+
+            if (partc == null)
+            {
+                throw new Exception("This participation does not exist");
+            }
+
+            _participationRepository.Delete(partc);
+            return partc;
         }
     }
 }

@@ -1,4 +1,4 @@
-    using Game.Domain.Idenity;
+using Game.Domain.Idenity;
 using Game.Repository;
 using Game.Service.Implementation;
 using Game.Service.Interface;
@@ -23,6 +23,7 @@ builder.Services.AddTransient<IAthleteService, AthleteService>();
 builder.Services.AddTransient<ICompetitionService, CompetitionService>();
 builder.Services.AddTransient<ITeamService, TeamService>();
 builder.Services.AddTransient<IParticipationService, ParticipationService>();
+builder.Services.AddTransient<ITournamentService, TournamentService>();
 
 
 var app = builder.Build();

@@ -16,7 +16,7 @@ namespace Game.Domain.DomainModels
         public Guid AthleteId { get; set; }
         public DateTime DateRegistered { get; set; }
 
-        public string? userId { get; set; }
-        public AthletesApplicationUser? User { get; set; }
+        public string? OwnerId { get; set; }
+        public AthletesApplicationUser? Owner { get; set; }
     }
 }

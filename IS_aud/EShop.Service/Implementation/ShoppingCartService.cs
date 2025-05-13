@@ -104,7 +104,7 @@ namespace EShop.Service.Implementation
 
             _orderRepository.Insert(newOrder);
 
-            var productsInOrder = shoppingCart.ProductInShoppingCarts.Select(x => new ProductsInOrder
+            var allProductsInOrder = shoppingCart.ProductInShoppingCarts.Select(x => new ProductsInOrder
             {
                 OrderId = newOrder.Id,
                 Order = newOrder,
@@ -115,7 +115,7 @@ namespace EShop.Service.Implementation
 
             double total = 0.0;
 
-            foreach (var product in productsInOrder)
+            foreach (var product in allProductsInOrder)
             {
                 total += product.Product.Price * product.Quantity;
                 _productsInOrderRepository.Insert(product);

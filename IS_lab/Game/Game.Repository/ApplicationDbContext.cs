@@ -16,6 +16,8 @@ namespace Game.Repository
         public DbSet<Participation> Participations { get; set; }
         public DbSet<Team> Teams { get; set; }
 
+        public DbSet<Tournament> Tournaments { get; set; }
+
         public DbSet<AthletesApplicationUser> Users { get; set; }
     }
 }

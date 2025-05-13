@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Game.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250424195020_initial")]
-    partial class initial
+    [Migration("20250509121436_LAB3-updateNameOwner")]
+    partial class LAB3updateNameOwner
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,6 +58,27 @@ namespace Game.Repository.Migrations
                     b.ToTable("Athletes");
                 });
 
+            modelBuilder.Entity("Game.Domain.DomainModels.AthleteInTournament", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AthleteId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TournamentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AthleteId");
+
+                    b.HasIndex("TournamentId");
+
+                    b.ToTable("AthleteInTournament");
+                });
+
             modelBuilder.Entity("Game.Domain.DomainModels.Competition", b =>
                 {
                     b.Property<Guid>("Id")
@@ -90,11 +111,16 @@ namespace Game.Repository.Migrations
                     b.Property<DateTime>("DateRegistered")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AthleteId");
 
                     b.HasIndex("CompetitionId");
+
+                    b.HasIndex("OwnerId");
 
                     b.ToTable("Participations");
                 });
@@ -114,6 +140,28 @@ namespace Game.Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teams");
+                });
+
+            modelBuilder.Entity("Game.Domain.DomainModels.Tournament", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Tournament");
                 });
 
             modelBuilder.Entity("Game.Domain.Idenity.AthletesApplicationUser", b =>
@@ -338,6 +386,25 @@ namespace Game.Repository.Migrations
                     b.Navigation("Team");
                 });
 
+            modelBuilder.Entity("Game.Domain.DomainModels.AthleteInTournament", b =>
+                {
+                    b.HasOne("Game.Domain.DomainModels.Athlete", "Athlete")
+                        .WithMany("AthleteInTournaments")
+                        .HasForeignKey("AthleteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Game.Domain.DomainModels.Tournament", "Tournament")
+                        .WithMany("AthleteInTournaments")
+                        .HasForeignKey("TournamentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Athlete");
+
+                    b.Navigation("Tournament");
+                });
+
             modelBuilder.Entity("Game.Domain.DomainModels.Participation", b =>
                 {
                     b.HasOne("Game.Domain.DomainModels.Athlete", "Athlete")
@@ -352,9 +419,24 @@ namespace Game.Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Game.Domain.Idenity.AthletesApplicationUser", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId");
+
                     b.Navigation("Athlete");
 
                     b.Navigation("Competition");
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Game.Domain.DomainModels.Tournament", b =>
+                {
+                    b.HasOne("Game.Domain.Idenity.AthletesApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -410,6 +492,8 @@ namespace Game.Repository.Migrations
 
             modelBuilder.Entity("Game.Domain.DomainModels.Athlete", b =>
                 {
+                    b.Navigation("AthleteInTournaments");
+
                     b.Navigation("Participations");
                 });
 
@@ -421,6 +505,11 @@ namespace Game.Repository.Migrations
             modelBuilder.Entity("Game.Domain.DomainModels.Team", b =>
                 {
                     b.Navigation("Athletes");
+                });
+
+            modelBuilder.Entity("Game.Domain.DomainModels.Tournament", b =>
+                {
+                    b.Navigation("AthleteInTournaments");
                 });
 #pragma warning restore 612, 618
         }

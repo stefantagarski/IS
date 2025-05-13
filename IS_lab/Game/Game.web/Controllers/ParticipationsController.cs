@@ -9,6 +9,7 @@ using Game.Domain.DomainModels;
 using Game.Repository;
 using Game.Service.Interface;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Game.Web.Controllers
 {
@@ -25,14 +26,16 @@ namespace Game.Web.Controllers
             _competitionService = competitionService;
         }
 
+        // GET: Participations
+        public IActionResult Index()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-
+            return View(_participationService.GetAllByCurrentUser(userId));
+        }
 
         // GET: Participations/Create
-        // TODO: Add the AthleteId as parameter and use it in the view as a value for the hidden input
-        // You can make a separate ViewModel or send the parameter via ViewData
-        // Use the SelectList to populate the drop-down list in the view
-        // Replace the usage of ApplicationDbContext with the appropriate service
+        [Authorize]
         public IActionResult Create(Guid id)
         {
             var partc = new Participation
@@ -44,28 +47,30 @@ namespace Game.Web.Controllers
         }
 
         //POST: Participations/Create
-        //To protect from overposting attacks, enable the specific properties you want to bind to.
-        //For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-
-        //TODO: Bind the form from the view to this POST action in order to create the Participation
-        //Implement the IParticipationService and use it here to create the visit
-
-       // After successful creation, the user should be redirected to Index page of Participants
-
-       [HttpPost]
-       [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,CompetitionId,AthleteId,DateRegistered")] Participation participation)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult Create([Bind("CompetitionId,AthleteId,DateRegistered")] Participation participation)
         {
-            if (ModelState.IsValid)
-            {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                _participationService.AddParticipationForAthleteAndCompetition(participation.AthleteId
-                    , participation.CompetitionId, userId);
-                return RedirectToAction("Index", "Athletes");
-            }
-            ViewData["AthleteId"] = new SelectList(_athleteService.GetAll(), "Id", "Name", participation.AthleteId);
-            ViewData["CompetitionId"] = new SelectList(_competitionService.GetAll(), "Id", "Name", participation.CompetitionId);
-            return View(participation);
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            _participationService.AddParticipationForAthleteAndCompetition(
+                participation.AthleteId,
+                participation.CompetitionId,
+                userId);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        // POST: Applications/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(Guid id)
+        {
+            _participationService.DeleteById(id);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

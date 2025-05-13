@@ -7,3 +7,70 @@ You should implement a View and the corresponding service methods for adding an 
 Bonus task:
 
 In the Participation model, add a reference to AthletesApplicationUser, and upon record creation, the currently logged-in user should be saved.
+
+
+@model Game.Domain.DomainModels.Tournament
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<h4>Profession</h4>
+
+<!-- TODO: Create Table for Tournament -->
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+    </dl>
+</div>
+
+<h4>Athletes in Tournament</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Full Name
+            </th>
+
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                Jersey Number
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.AthleteInTournaments)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Athlete.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Athlete.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Athlete.JerseyNumber)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-info">
+            <strong>Total Patients: </strong> @Model.AthleteInTournaments.Count
+        </div>
+    </div>
+</div>
