@@ -1,0 +1,366 @@
+public class TransferRequest
+    {
+        public Guid Id { get; set; }
+        public DateTime DateCreated { get; set; }
+        public string UserId { get; set; }
+        public ApplicationUser User { get; set; }
+        
+        public virtual ICollection<PatientTransfer> PatientTransfers { get; set; }
+
+        public TransferRequest()
+        {
+            PatientTransfers = new List<PatientTransfer>();
+        }
+    }
+
+============================================================================================
+
+public class PatientTransfer
+    {
+        public Guid Id { get; set; }
+        
+        public Guid PatientId { get; set; }
+        public Patient Patient { get; set; }
+        
+        public string DepartmentName { get; set; }
+        public DateTime DateAdmitted { get; set; }
+        
+        public Guid TransferRequestId { get; set; }
+        public TransferRequest TransferRequest { get; set; }
+    }
+
+==============================================================================================
+
+ public class TransferService : ITransferService
+    {
+        private readonly IRepository<TransferRequest> _transferRequestRepository;
+        private readonly IRepository<PatientTransfer> _patientTransferRepository;
+        private readonly IRepository<PatientDepartment> _patientDepartmentRepository;
+
+        public TransferService(
+            IRepository<TransferRequest> transferRequestRepository,
+            IRepository<PatientTransfer> patientTransferRepository,
+            IRepository<PatientDepartment> patientDepartmentRepository)
+        {
+            _transferRequestRepository = transferRequestRepository;
+            _patientTransferRepository = patientTransferRepository;
+            _patientDepartmentRepository = patientDepartmentRepository;
+        }
+
+        public TransferRequest CreateTransferRequest(string userId)
+        {
+            // Create new transfer request
+            var transferRequest = new TransferRequest
+            {
+                Id = Guid.NewGuid(),
+                DateCreated = DateTime.Now,
+                UserId = userId
+            };
+
+            _transferRequestRepository.Insert(transferRequest);
+
+            // Get all patient departments created by the current user
+            var patientDepartments = _patientDepartmentRepository.GetAll(
+                selector: x => x,
+                predicate: x => x.CreatedByUserId == userId);
+
+            // Create patient transfers for each patient department
+            foreach (var pd in patientDepartments)
+            {
+                var patientTransfer = new PatientTransfer
+                {
+                    Id = Guid.NewGuid(),
+                    PatientId = pd.PatientId,
+                    Patient = pd.Patient,
+                    DepartmentName = pd.DepartmentName,
+                    DateAdmitted = pd.DateAdmitted,
+                    TransferRequestId = transferRequest.Id,
+                    TransferRequest = transferRequest
+                };
+
+                _patientTransferRepository.Insert(patientTransfer);
+                _patientDepartmentRepository.Delete(pd);
+            }
+
+            return transferRequest;
+        }
+
+        public TransferRequest GetTransferRequestById(Guid id)
+        {
+            return _transferRequestRepository.Get(
+                selector: x => x,
+                predicate: x => x.Id == id);
+        }
+
+        public TransferRequestDTO GetTransferRequestDetails(Guid id)
+        {
+            var transferRequest = _transferRequestRepository.Get(
+                selector: x => x,
+                predicate: x => x.Id == id,
+                include: x => x.Include(tr => tr.PatientTransfers)
+                               .ThenInclude(pt => pt.Patient));
+
+            if (transferRequest == null)
+            {
+                return null;
+            }
+
+            var patientTransfers = transferRequest.PatientTransfers.Select(pt => new PatientTransferDTO
+            {
+                FirstName = pt.Patient.FirstName,
+                LastName = pt.Patient.LastName,
+                DateAdmitted = pt.DateAdmitted,
+                DepartmentName = pt.DepartmentName
+            }).ToList();
+
+            var dto = new TransferRequestDTO
+            {
+                Id = transferRequest.Id,
+                DateCreated = transferRequest.DateCreated,
+                PatientTransfers = patientTransfers,
+                TotalPatients = patientTransfers.Count
+            };
+
+            return dto;
+        }
+    }
+
+=======================================================================================================================
+
+public class TransferRequestDTO
+    {
+        public Guid Id { get; set; }
+        public DateTime DateCreated { get; set; }
+        public List<PatientTransferDTO> PatientTransfers { get; set; }
+        public int TotalPatients { get; set; }
+    }
+
+    public class PatientTransferDTO
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateAdmitted { get; set; }
+        public string DepartmentName { get; set; }
+    }
+
+
+=============================================================================================================================
+
+public class PatientDepartmentService : IPatientDepartmentService
+    {
+        private readonly IRepository<PatientDepartment> _patientDepartmentRepository;
+
+        public PatientDepartmentService(IRepository<PatientDepartment> patientDepartmentRepository)
+        {
+            _patientDepartmentRepository = patientDepartmentRepository;
+        }
+
+        public List<PatientDepartment> GetAllByUserId(string userId)
+        {
+            return _patientDepartmentRepository.GetAll(
+                selector: x => x,
+                predicate: x => x.CreatedByUserId == userId,
+                include: x => x.Include(pd => pd.Patient))
+                .ToList();
+        }
+
+        public PatientDepartment GetById(Guid id)
+        {
+            return _patientDepartmentRepository.Get(
+                selector: x => x,
+                predicate: x => x.Id == id,
+                include: x => x.Include(pd => pd.Patient));
+        }
+
+        public PatientDepartment Add(PatientDepartment patientDepartment)
+        {
+            patientDepartment.Id = Guid.NewGuid();
+            return _patientDepartmentRepository.Insert(patientDepartment);
+        }
+
+        public PatientDepartment Update(PatientDepartment patientDepartment)
+        {
+            return _patientDepartmentRepository.Update(patientDepartment);
+        }
+
+        public PatientDepartment DeleteById(Guid id)
+        {
+            var patientDepartment = GetById(id);
+            if (patientDepartment == null)
+            {
+                throw new Exception("This patient department does not exist!");
+            }
+            _patientDepartmentRepository.Delete(patientDepartment);
+            return patientDepartment;
+        }
+    }
+
+===========================================================================================================
+
+
+ [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Transfer()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var transferRequest = _transferService.CreateTransferRequest(userId);
+            
+            return RedirectToAction("TransferDetails", new { id = transferRequest.Id });
+        }
+
+        // GET: PatientDepartments/TransferDetails/5
+        public IActionResult TransferDetails(Guid id)
+        {
+            var transferRequestDTO = _transferService.GetTransferRequestDetails(id);
+            if (transferRequestDTO == null)
+            {
+                return NotFound();
+            }
+
+            return View(transferRequestDTO);
+        }
+    }
+
+
+======================================================================================================================
+
+@model IEnumerable<Hospital.Domain.DomainModels.PatientDepartment>
+
+@{
+    ViewData["Title"] = "Patient Departments";
+}
+
+<h1>Patient Departments</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+    @if (Model.Any())
+    {
+        <form asp-action="Transfer" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-warning">Transfer All</button>
+        </form>
+    }
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateAdmitted)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Patient.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Patient.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartmentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateAdmitted)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    <form asp-action="Delete" asp-route-id="@item.Id" method="post" style="display: inline-block;">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+========================================================================================================
+
+@model Hospital.Domain.DTO.TransferRequestDTO
+
+@{
+    ViewData["Title"] = "Transfer Details";
+}
+
+<h1>Transfer Details</h1>
+
+<div>
+    <h4>Transfer Request</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+    </dl>
+</div>
+
+<h4>Transferred Patients</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Department
+            </th>
+            <th>
+                Date Admitted
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.PatientTransfers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartmentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateAdmitted)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-info">
+            <strong>Total Patients: </strong> @Model.TotalPatients
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
