@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Game.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250509115617_LAB3")]
-    partial class LAB3
+    [Migration("20250514101540_lab3")]
+    partial class lab3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -112,9 +112,6 @@ namespace Game.Repository.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -123,7 +120,7 @@ namespace Game.Repository.Migrations
 
                     b.HasIndex("CompetitionId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("OwnerId");
 
                     b.ToTable("Participations");
                 });
@@ -164,7 +161,7 @@ namespace Game.Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Tournament");
+                    b.ToTable("Tournaments");
                 });
 
             modelBuilder.Entity("Game.Domain.Idenity.AthletesApplicationUser", b =>
@@ -422,15 +419,15 @@ namespace Game.Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Game.Domain.Idenity.AthletesApplicationUser", "User")
+                    b.HasOne("Game.Domain.Idenity.AthletesApplicationUser", "Owner")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("OwnerId");
 
                     b.Navigation("Athlete");
 
                     b.Navigation("Competition");
 
-                    b.Navigation("User");
+                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Game.Domain.DomainModels.Tournament", b =>

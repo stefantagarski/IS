@@ -24,7 +24,7 @@ namespace Game.Domain.DomainModels
 
         public virtual ICollection<Participation>? Participations { get; set; }
 
-        public virtual ICollection<AthleteInTournament>? AthleteInTournaments { get; set; }
+        public virtual ICollection<AthleteInTournament>? AthleteInTournaments { get; set; } = new List<AthleteInTournament>();
 
         public string FullName => $"{FirstName} {LastName}";
     }

@@ -13,6 +13,6 @@ namespace Game.Domain.DomainModels
         public string? OwnerId { get; set; }
         public AthletesApplicationUser? User { get; set; }
 
-        public virtual ICollection<AthleteInTournament>? AthleteInTournaments { get; set; }
+        public virtual ICollection<AthleteInTournament>? AthleteInTournaments { get; set; } = new List<AthleteInTournament>();
     }
 }

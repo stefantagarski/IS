@@ -45,9 +45,9 @@
                     @Html.DisplayFor(modelItem => item.DateRegistered)
                 </td>
                 <td>
-                   <form asp-action="Delete" method="post" asp-route-id="@item.Id">
-                       <button class="btn btn-danger">Delete</button>
-                   </form>
+                  <form asp-action="Delete" method="post" asp-route-id="@item.Id">
+                      <button class="btn btn-danger">Delete</button>
+                  </form>
                 </td>
             </tr>
         }

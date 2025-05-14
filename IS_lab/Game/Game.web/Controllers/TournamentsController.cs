@@ -31,7 +31,7 @@ namespace Game.web.Controllers
             // Get current user, call service method, redirect to Details
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-           var tournament = _tournamentService.Create(userId);
+            var tournament = _tournamentService.Create(userId);
 
             return RedirectToAction("Details", new {id = tournament.Id});
         }

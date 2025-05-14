@@ -43,7 +43,7 @@ namespace Game.Web.Controllers
                 AthleteId = id
             };
             ViewData["CompetitionId"] = new SelectList(_competitionService.GetAll(), "Id", "Name");
-            return View(partc);
+            return View(partc); 
         }
 
         //POST: Participations/Create

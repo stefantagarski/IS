@@ -25,18 +25,18 @@ namespace Game.Service.Implementation
         }
 
         public Participation AddParticipationForAthleteAndCompetition(Guid athleteId, Guid competitionId, string userId)
-        {           
-                var newParticipation = new Participation
-                {
-                    AthleteId = athleteId,
-                    CompetitionId = competitionId,
-                    DateRegistered = DateTime.Now,
-                    OwnerId = userId
-                };
+        {
+            var newParticipation = new Participation
+            {
+                AthleteId = athleteId,
+                CompetitionId = competitionId,
+                DateRegistered = DateTime.Now,
+                OwnerId = userId
+            };
 
             return _participationRepository.Insert(newParticipation);
         }
-       
+
         //TODO
         public List<Participation> GetAllByCurrentUser(string userId)
         {
@@ -51,7 +51,7 @@ namespace Game.Service.Implementation
         public Participation GetById(Guid id)
         {
             return _participationRepository.Get(selector: x => x,
-                predicate: x => x.OwnerId == id.ToString(),
+                predicate: x => x.Id == id,
                 include: x => x.Include(y => y.Athlete).ThenInclude(z => z.Participations).
                 Include(x => x.Competition).Include(x => x.Owner));
         }
@@ -60,7 +60,7 @@ namespace Game.Service.Implementation
         public Participation DeleteById(Guid id)
         {
             var partc = _participationRepository.Get(selector: x => x, predicate: x => x.Id == id);
-
+            
             if (partc == null)
             {
                 throw new Exception("This participation does not exist");

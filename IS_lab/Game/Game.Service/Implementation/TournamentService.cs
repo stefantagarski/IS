@@ -70,7 +70,7 @@ namespace Game.Service.Implementation
         {
             return _tournamentRepository.Get(selector: x => x,
                 predicate: x => x.Id == id,
-                include: x => x.Include(y => y.AthleteInTournaments));
+                include: x => x.Include(y => y.AthleteInTournaments).ThenInclude(z => z.Athlete));
         }
     }
 }
