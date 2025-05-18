@@ -1,0 +1,268 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FINKI\\IS\\auditory\\AdminApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\adminapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\adminapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\views\\home\\importusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\views\\home\\importusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\productsinorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\productsinorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|c:\\finki\\is\\auditory\\adminapplication\\adminapplication\\models\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7903C6-D88F-4E02-B049-383351D4CD6A}|AdminApplication\\AdminApplication.csproj|solutionrelative:adminapplication\\models\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:48:52.149Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EShopApplicationUser.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\EShopApplicationUser.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\EShopApplicationUser.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\EShopApplicationUser.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\EShopApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:49:25.544Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\Product.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\Product.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:51:11.885Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\Order.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\Order.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:50:06.471Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductsInOrder.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\ProductsInOrder.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\ProductsInOrder.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\ProductsInOrder.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\ProductsInOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:53:14.664Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AdminApplication\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswBIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T18:27:35.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "AdminApplication\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:55:51.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminApplication\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "AdminApplication\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T13:01:12.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AdminApplication\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AdminApplication\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T18:47:02.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\UserDTO.cs",
+              "RelativeDocumentMoniker": "AdminApplication\\Models\\UserDTO.cs",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Models\\UserDTO.cs",
+              "RelativeToolTip": "AdminApplication\\Models\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T18:37:14.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminApplication",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\AdminApplication.csproj",
+              "RelativeDocumentMoniker": "AdminApplication\\AdminApplication.csproj",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\AdminApplication.csproj",
+              "RelativeToolTip": "AdminApplication\\AdminApplication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-18T18:31:26.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImportUsers.cshtml",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Home\\ImportUsers.cshtml",
+              "RelativeDocumentMoniker": "AdminApplication\\Views\\Home\\ImportUsers.cshtml",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Home\\ImportUsers.cshtml",
+              "RelativeToolTip": "AdminApplication\\Views\\Home\\ImportUsers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-18T18:29:13.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "AdminApplication\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\FINKI\\IS\\auditory\\AdminApplication\\AdminApplication\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "AdminApplication\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-14T12:57:19.859Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
