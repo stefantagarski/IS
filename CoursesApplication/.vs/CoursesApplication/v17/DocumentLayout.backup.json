@@ -1,0 +1,344 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\testexamis.tests\\controllerstests\\onionarchitecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|solutionrelative:testexamis.tests\\controllerstests\\onionarchitecturetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\testexamis.tests\\controllerstests\\semesterscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|solutionrelative:testexamis.tests\\controllerstests\\semesterscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\testexamis.tests\\testexamis.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3AD63CA0-A8E3-4AAD-B68B-8785A39DDFAC}|TestExamIS.Tests\\TestExamIS.Tests.csproj|solutionrelative:testexamis.tests\\testexamis.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\views\\studentoncourse\\enrolloncourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\views\\studentoncourse\\enrolloncourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.domain\\dto\\coursedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|solutionrelative:coursesapplication.domain\\dto\\coursedetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.domain\\dto\\enrolloncoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|solutionrelative:coursesapplication.domain\\dto\\enrolloncoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.service\\implementation\\studentoncourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|solutionrelative:coursesapplication.service\\implementation\\studentoncourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.domain\\domainmodels\\studentoncourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E56251C-8BB3-4052-95F3-C0BF85A6B0AB}|CoursesApplication.Domain\\CoursesApplication.Domain.csproj|solutionrelative:coursesapplication.domain\\domainmodels\\studentoncourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\views\\studentoncourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\views\\studentoncourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\controllers\\studentoncoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\controllers\\studentoncoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\controllers\\semesterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\controllers\\semesterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FB0D4C-294B-48EF-9FF3-227A8CE94E1A}|CoursesApplication.Web\\CoursesApplication.Web.csproj|solutionrelative:coursesapplication.web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.service\\implementation\\semesterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|solutionrelative:coursesapplication.service\\implementation\\semesterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.service\\implementation\\datafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|solutionrelative:coursesapplication.service\\implementation\\datafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB266BAE-C4CD-42C2-9AC9-16846ED6AE4E}|CoursesApplication.Service\\CoursesApplication.Service.csproj|solutionrelative:coursesapplication.service\\implementation\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92B63304-5E6F-443B-B1EF-C9F0FB987CBE}|CoursesApplication.Repository\\CoursesApplication.Repository.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B63304-5E6F-443B-B1EF-C9F0FB987CBE}|CoursesApplication.Repository\\CoursesApplication.Repository.csproj|solutionrelative:coursesapplication.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92B63304-5E6F-443B-B1EF-C9F0FB987CBE}|CoursesApplication.Repository\\CoursesApplication.Repository.csproj|c:\\users\\acer\\desktop\\is\\coursesapplication\\coursesapplication.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B63304-5E6F-443B-B1EF-C9F0FB987CBE}|CoursesApplication.Repository\\CoursesApplication.Repository.csproj|solutionrelative:coursesapplication.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SemestersControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\ControllersTests\\SemestersControllerTests.cs",
+              "RelativeDocumentMoniker": "TestExamIS.Tests\\ControllersTests\\SemestersControllerTests.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\ControllersTests\\SemestersControllerTests.cs",
+              "RelativeToolTip": "TestExamIS.Tests\\ControllersTests\\SemestersControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:43:29.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OnionArchitectureTests.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\ControllersTests\\OnionArchitectureTests.cs",
+              "RelativeDocumentMoniker": "TestExamIS.Tests\\ControllersTests\\OnionArchitectureTests.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\ControllersTests\\OnionArchitectureTests.cs",
+              "RelativeToolTip": "TestExamIS.Tests\\ControllersTests\\OnionArchitectureTests.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAEwK8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:41:56.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestExamIS.Tests",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\TestExamIS.Tests.csproj",
+              "RelativeDocumentMoniker": "TestExamIS.Tests\\TestExamIS.Tests.csproj",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\TestExamIS.Tests\\TestExamIS.Tests.csproj",
+              "RelativeToolTip": "TestExamIS.Tests\\TestExamIS.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T09:39:18.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnrollOnCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\StudentOnCourse\\EnrollOnCourse.cshtml",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Views\\StudentOnCourse\\EnrollOnCourse.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\StudentOnCourse\\EnrollOnCourse.cshtml",
+              "RelativeToolTip": "CoursesApplication.Web\\Views\\StudentOnCourse\\EnrollOnCourse.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T09:35:18.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentOnCourse.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DomainModels\\StudentOnCourse.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Domain\\DomainModels\\StudentOnCourse.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DomainModels\\StudentOnCourse.cs",
+              "RelativeToolTip": "CoursesApplication.Domain\\DomainModels\\StudentOnCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:35:02.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\StudentOnCourse\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Views\\StudentOnCourse\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\StudentOnCourse\\Index.cshtml",
+              "RelativeToolTip": "CoursesApplication.Web\\Views\\StudentOnCourse\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T09:34:30.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourseDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DTO\\CourseDetailsDTO.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Domain\\DTO\\CourseDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DTO\\CourseDetailsDTO.cs",
+              "RelativeToolTip": "CoursesApplication.Domain\\DTO\\CourseDetailsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:31:47.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnrollOnCourseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DTO\\EnrollOnCourseDto.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Domain\\DTO\\EnrollOnCourseDto.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Domain\\DTO\\EnrollOnCourseDto.cs",
+              "RelativeToolTip": "CoursesApplication.Domain\\DTO\\EnrollOnCourseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:31:51.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "CoursesApplication.Web\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T09:34:23.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentOnCourseController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\StudentOnCourseController.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Controllers\\StudentOnCourseController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\StudentOnCourseController.cs",
+              "RelativeToolTip": "CoursesApplication.Web\\Controllers\\StudentOnCourseController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:34:00.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentOnCourseService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\StudentOnCourseService.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Service\\Implementation\\StudentOnCourseService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\StudentOnCourseService.cs",
+              "RelativeToolTip": "CoursesApplication.Service\\Implementation\\StudentOnCourseService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:32:47.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SemestersController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\SemestersController.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Controllers\\SemestersController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\SemestersController.cs",
+              "RelativeToolTip": "CoursesApplication.Web\\Controllers\\SemestersController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:33:53.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Web\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Web\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "CoursesApplication.Web\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAUwJUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:33:24.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SemesterService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\SemesterService.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Service\\Implementation\\SemesterService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\SemesterService.cs",
+              "RelativeToolTip": "CoursesApplication.Service\\Implementation\\SemesterService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:32:36.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Repository\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Repository\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Repository\\Interface\\IRepository.cs",
+              "RelativeToolTip": "CoursesApplication.Repository\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:32:18.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Repository\\Implementation\\Repository.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Repository\\Implementation\\Repository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Repository\\Implementation\\Repository.cs",
+              "RelativeToolTip": "CoursesApplication.Repository\\Implementation\\Repository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:32:00.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\CourseService.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Service\\Implementation\\CourseService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\CourseService.cs",
+              "RelativeToolTip": "CoursesApplication.Service\\Implementation\\CourseService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:31:54.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataFetchService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\DataFetchService.cs",
+              "RelativeDocumentMoniker": "CoursesApplication.Service\\Implementation\\DataFetchService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\IS\\CoursesApplication\\CoursesApplication.Service\\Implementation\\DataFetchService.cs",
+              "RelativeToolTip": "CoursesApplication.Service\\Implementation\\DataFetchService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:26:19.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

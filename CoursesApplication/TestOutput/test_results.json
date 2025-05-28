@@ -1,0 +1,29 @@
+[
+  {
+    "TestName": "OnionArchitectureTests.Controllers_Should_Not_Depend_On_ApplicationDbContext",
+    "StudentId": "YOUR_INDEX_HERE",
+    "TestCategory": "OnionArchitecture",
+    "IsPassed": false,
+    "ExecutedAt": "2025-05-27T11:49:47.807759+02:00",
+    "ErrorMessage": "Could not find ApplicationDbContext or any DbContext subclass. Check if Entity Framework Core is properly referenced.",
+    "Points": 10
+  },
+  {
+    "TestName": "OnionArchitectureTests.Services_Should_Not_Depend_On_ApplicationDbContext",
+    "StudentId": "YOUR_INDEX_HERE",
+    "TestCategory": "OnionArchitecture",
+    "IsPassed": false,
+    "ExecutedAt": "2025-05-27T11:49:55.4572727+02:00",
+    "ErrorMessage": "Could not find ApplicationDbContext or any DbContext subclass. Check if Entity Framework Core is properly referenced.",
+    "Points": 10
+  },
+  {
+    "TestName": "DataFetchServiceIntegrationTests.FetchCoursesFromApi_Should_Return_Valid_Courses",
+    "StudentId": "YOUR_INDEX_HERE",
+    "TestCategory": "DataFetchService",
+    "IsPassed": false,
+    "ExecutedAt": "2025-05-27T11:50:09.7095401+02:00",
+    "ErrorMessage": "No connection could be made because the target machine actively refused it. (is-lab4.ddns.net:8080)",
+    "Points": 5
+  }
+]
