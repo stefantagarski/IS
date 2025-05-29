@@ -1,0 +1,226 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\implementation\\apidatafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\implementation\\apidatafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286AF-0297-47C7-A290-E2B685030BB5}|BookApplication.Web\\BookApplication.Web.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.web\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286AF-0297-47C7-A290-E2B685030BB5}|BookApplication.Web\\BookApplication.Web.csproj|solutionrelative:bookapplication.web\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB89B887-4477-482C-9FB4-ADF9881F5083}|BookApplication.Domain\\BookApplication.Domain.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.domain\\text.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EB89B887-4477-482C-9FB4-ADF9881F5083}|BookApplication.Domain\\BookApplication.Domain.csproj|solutionrelative:bookapplication.domain\\text.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{896286AF-0297-47C7-A290-E2B685030BB5}|BookApplication.Web\\BookApplication.Web.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{896286AF-0297-47C7-A290-E2B685030BB5}|BookApplication.Web\\BookApplication.Web.csproj|solutionrelative:bookapplication.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\interface\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\implementation\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\interface\\ichapterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\interface\\ichapterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\implementation\\chapterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\implementation\\chapterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE59B48-B677-4DCC-8393-77390D04C004}|BookApplication.Repository\\BookApplication.Repository.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE59B48-B677-4DCC-8393-77390D04C004}|BookApplication.Repository\\BookApplication.Repository.csproj|solutionrelative:bookapplication.repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABE59B48-B677-4DCC-8393-77390D04C004}|BookApplication.Repository\\BookApplication.Repository.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABE59B48-B677-4DCC-8393-77390D04C004}|BookApplication.Repository\\BookApplication.Repository.csproj|solutionrelative:bookapplication.repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|c:\\finki\\is\\is_lab\\bookapplication\\bookapplication (3)\\bookapplication\\bookapplication.service\\interface\\iapidatafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40FC422A-111A-4AAC-B08C-BFB8DBB9BF2F}|BookApplication.Service\\BookApplication.Service.csproj|solutionrelative:bookapplication.service\\interface\\iapidatafetchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "text.txt",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Domain\\text.txt",
+              "RelativeDocumentMoniker": "BookApplication.Domain\\text.txt",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Domain\\text.txt",
+              "RelativeToolTip": "BookApplication.Domain\\text.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-22T13:42:51.234Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Web\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookApplication.Web\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Web\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookApplication.Web\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T10:39:37.258Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiDataFetchService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\ApiDataFetchService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Implementation\\ApiDataFetchService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\ApiDataFetchService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Implementation\\ApiDataFetchService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T15:39:37.554Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Web\\Program.cs",
+              "RelativeDocumentMoniker": "BookApplication.Web\\Program.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Web\\Program.cs",
+              "RelativeToolTip": "BookApplication.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:36:51.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IBookService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Interface\\IBookService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IBookService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Interface\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:34:34.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\BookService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Implementation\\BookService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\BookService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Implementation\\BookService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:33:20.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IChapterService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IChapterService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Interface\\IChapterService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IChapterService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Interface\\IChapterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:34:21.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChapterService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\ChapterService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Implementation\\ChapterService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Implementation\\ChapterService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Implementation\\ChapterService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwDIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:33:20.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Repository\\Implementation\\Repository.cs",
+              "RelativeDocumentMoniker": "BookApplication.Repository\\Implementation\\Repository.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Repository\\Implementation\\Repository.cs",
+              "RelativeToolTip": "BookApplication.Repository\\Implementation\\Repository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:33:16.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Repository\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "BookApplication.Repository\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Repository\\Interface\\IRepository.cs",
+              "RelativeToolTip": "BookApplication.Repository\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:33:14.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IApiDataFetchService.cs",
+              "DocumentMoniker": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IApiDataFetchService.cs",
+              "RelativeDocumentMoniker": "BookApplication.Service\\Interface\\IApiDataFetchService.cs",
+              "ToolTip": "C:\\FINKI\\IS\\IS_lab\\BookApplication\\BookApplication (3)\\BookApplication\\BookApplication.Service\\Interface\\IApiDataFetchService.cs",
+              "RelativeToolTip": "BookApplication.Service\\Interface\\IApiDataFetchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T19:29:51.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
